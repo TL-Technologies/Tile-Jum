@@ -52,12 +52,10 @@ namespace Game
 
         private void OnEnable()
         {
-            ResourceManager.PlayerSkinSelectionChanged += ResourceManagerOnPlayerSkinSelectionChanged;
         }
 
         private void OnDisable()
         {
-            ResourceManager.PlayerSkinSelectionChanged -= ResourceManagerOnPlayerSkinSelectionChanged;
         }
 
 
@@ -80,7 +78,6 @@ namespace Game
             _levelCreator.StepDistance = Player.ForwardStepDistance;
             _levelCreator.CreateOrRefresh();
             TotalTileCount = _levelCreator.Tiles.Count();
-            Player.PlayerSkin = ResourceManager.GetSkinById(ResourceManager.GetSelectedSkin());
             Player.Died +=PlayerOnDied;
             Player.HitEnd+=PlayerOnHitEnd;
             Player.JumpedOnTile +=PlayerOnJumpedOnTile;

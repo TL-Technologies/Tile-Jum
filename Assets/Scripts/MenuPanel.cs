@@ -34,11 +34,6 @@ namespace Game
             Hide();
             LevelManager.Instance.StartTheGame();
         }
-
-        public void OnClickSkin()
-        {
-            var playerSkinSelectionPanel = UIManager.Instance.PlayerSkinSelectionPanel;
-            playerSkinSelectionPanel.Show();
-        }
+        
     }
 }

@@ -12,22 +12,7 @@ public class SkinTileUI : MonoBehaviour
     [SerializeField] private GameObject _priceGroup;
 
     private ViewModel _mViewModel;
-
-    public ViewModel MViewModel
-    {
-        get => _mViewModel;
-        set
-        {
-            _img.sprite = value.Skin.icon;
-
-            var skinLocked = ResourceManager.IsSkinLocked(value.Skin.id);
-            _lockedEffectGO.SetActive(skinLocked);
-            _priceGroup.SetActive(skinLocked && value.Skin.lockDetails.type == LockDetails.Type.Coins);
-            if (_priceGroup.activeSelf)
-                _priceGroup.GetComponentInChildren<Text>().text = value.Skin.lockDetails.value.ToString();
-            _mViewModel = value;
-        }
-    }
+    
 
     
 

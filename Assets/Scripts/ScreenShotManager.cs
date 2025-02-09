@@ -29,6 +29,6 @@ public class ScreenShotManager : Singleton<ScreenShotManager> {
         var path = Path.Combine(directory.Parent.FullName, $"Screenshot_{DateTime.Now:yyyyMMdd_Hmmss}.png");
      
         ScreenCapture.CaptureScreenshot(path,1);
-        Debug.Log($"Screen Shot Captured");
+        Debug.Log($"Screen Shot Captured" + path);
     }
 }

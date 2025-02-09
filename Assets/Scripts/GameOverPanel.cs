@@ -34,7 +34,6 @@ namespace Game
             {
                 Invoke(nameof(ShowRating), 1);
             }
-            AdsManager.ShowOrPassAdsIfCan();
             base.Show(animate, completed);
         }
 

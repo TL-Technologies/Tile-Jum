@@ -10,26 +10,17 @@ namespace Game
         [SerializeField] private LevelCompletePanel _levelCompletePanel;
         [SerializeField] private MenuPanel _menuPanel;
         [SerializeField] private GamePlayPanel _gamePlayPanel;
-        [SerializeField] private PlayerSkinSelectionPanel _playerSkinSelectionPanel;
 
 
         public GameOverPanel GameOverPanel => _gameOverPanel;
         public MenuPanel MenuPanel => _menuPanel;
         public GamePlayPanel GamePlayPanel => _gamePlayPanel;
         public static UIManager Instance { get; private set; }
-
-        public PlayerSkinSelectionPanel PlayerSkinSelectionPanel => _playerSkinSelectionPanel;
+        
 
         private void Awake()
         {
             Instance = this;
-#if DAILY_REWARD
-            if (MyGame.GameManager.HasPendingDailyReward)
-            {
-                var dailyRewardPanel = SharedUIManager.DailyRewardPanel;
-                dailyRewardPanel.Show();
-            }
-#endif
         }
 
         private void OnEnable()

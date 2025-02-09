@@ -26,8 +26,7 @@ public class RectEnvironmentEditor : Editor
 
         Handles.color = Color.white;
         EditorGUI.BeginChangeCheck();
-        startGlobalPosition = Handles.FreeMoveHandle(startGlobalPosition,
-            _rectEnvironment.transform.rotation 
+        var fmh_30_13_638746938116694278 = _rectEnvironment.transform.rotation; startGlobalPosition = Handles.FreeMoveHandle(startGlobalPosition 
             , 1.5f
             , Vector3.zero, ArrowHandleCap);
 
@@ -63,7 +62,7 @@ public class RectEnvironmentEditor : Editor
             "end Line", style);
         Handles.color = Color.white;
         EditorGUI.BeginChangeCheck();
-        endGlobalPosition = Handles.FreeMoveHandle(endGlobalPosition, _rectEnvironment.transform.rotation,
+        var fmh_66_71_638746938116713249 = _rectEnvironment.transform.rotation; endGlobalPosition = Handles.FreeMoveHandle(endGlobalPosition,
             1.5f, Vector3.zero, ArrowHandleCap);
 
 
