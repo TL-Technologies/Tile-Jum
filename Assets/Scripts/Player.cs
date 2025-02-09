@@ -23,12 +23,15 @@ namespace Game
         [Header("Sounds")] [SerializeField] private AudioClip _correctTileJumpClip;
         [SerializeField] private AudioClip _breakClip, _colorChangeClip, _levelFinishClip,_perfectClip;
 
-
+        public Sprite[] _sprites;
+        
+        
         public float ForwardSpeed
         {
             get => _forwardSpeed;
             set => _forwardSpeed = value;
         }
+        
 
         public PlayerSkin PlayerSkin
         {
@@ -248,5 +251,7 @@ namespace Game
             audioSource.pitch = pitch;
             audioSource.volume = volume;
         }
+        
+       
     }
 }
