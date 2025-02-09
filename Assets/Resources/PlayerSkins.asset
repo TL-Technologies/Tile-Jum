@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a603239a4c34a3e4aa34ab3ba35d91fa, type: 3}
+  m_Name: PlayerSkins
+  m_EditorClassIdentifier: 
+  _playerSkins:
+  - id: sphere
+    icon: {fileID: 21300000, guid: 5c7f8a8c765eae44fb5decdbd7d247a6, type: 3}
+    preLocked: 0
+    lockDetails:
+      type: 0
+      value: 0
+    prefab: {fileID: 6905778877772833858, guid: aff2328e1197471418dcbf0857d5ea07,
+      type: 3}
+  - id: ico_sphere
+    icon: {fileID: 21300000, guid: 69b5e54ceaa778747a59ea0dc3175688, type: 3}
+    preLocked: 1
+    lockDetails:
+      type: 0
+      value: 100
+    prefab: {fileID: 7716690942704154780, guid: f63038b8cbd56d34391eaacc9ebcb031,
+      type: 3}
+  - id: cube
+    icon: {fileID: 21300000, guid: 2ba5a10ef2f27be4fbb1f15801ff01e1, type: 3}
+    preLocked: 1
+    lockDetails:
+      type: 0
+      value: 100
+    prefab: {fileID: 2872732585857097811, guid: 5149e8ab7ec6a42448af69ea5ce816d9,
+      type: 3}
+  - id: torus
+    icon: {fileID: 21300000, guid: 62de11b4410871348b44c2792c46fc11, type: 3}
+    preLocked: 1
+    lockDetails:
+      type: 0
+      value: 100
+    prefab: {fileID: 4494647070818721676, guid: 43a398ac26c84584398a2817a9f6db00,
+      type: 3}
+  - id: heart
+    icon: {fileID: 21300000, guid: af3e18ca5fcd0594ab7c4bab7dc5351b, type: 3}
+    preLocked: 1
+    lockDetails:
+      type: 0
+      value: 100
+    prefab: {fileID: 4494647070818721676, guid: 2857cd0dd94cf80458762e2ccfab5b54,
+      type: 3}
+  - id: star
+    icon: {fileID: 21300000, guid: 3630659902614a843b456319ef6bf80b, type: 3}
+    preLocked: 1
+    lockDetails:
+      type: 0
+      value: 100
+    prefab: {fileID: 4494647070818721676, guid: 80e550595e42673409ec2fb0dde57dc7,
+      type: 3}
